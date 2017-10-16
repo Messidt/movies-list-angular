@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" ng-app="moviesModule">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,20 @@
     <script src="app/app.js"></script>
   </head>
   <body>
+    <header>
+      <h1>My movies</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Movies list</li>
+        </ul>
+      </nav>
+    </header>
+    <main ng-view>
 
+    </main>
+    <footer>
+      <h3>Created by Piotr Szmidt &copy; 2017</h3>
+    </footer>
   </body>
 </html>
