@@ -17,26 +17,12 @@
         <h1>My movies</h1>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Movies list</a></li>
+            <li><a href="#!home">Home</a></li>
+            <li><a href="#!list">Movies list</a></li>
           </ul>
         </nav>
       </header>
-      <main ng-controller="MoviesController">
-        <ul id="movies-list">
-          <li ng-repeat="movie in movies">
-            <div class="movie-poster">
-              <img ng-src="{{movie.poster}}" alt="">
-            </div>
-            <div class="movie-info">
-              <h3>{{movie.title}} ({{movie.year}})</h3>
-            </div>
-            <div class="movie-rate">
-              <p>Rate: {{movie.rate}}</p>
-            </div>
-          </li>
-        </ul>
-      </main>
+      <main ng-view></main>
       <footer>
         <h3>Created by Piotr Szmidt &copy; 2017</h3>
       </footer>
