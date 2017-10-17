@@ -2,50 +2,60 @@
 	"title": "The Shawshank Redemption",
 	"genre": "drama",
 	"year": 1994,
-	"rate": 9.3
+	"rate": 9.3,
+	"poster": "content/images/Shawshank.Redemption.jpg"
 }, {
 	"title": "12 Angry Men",
 	"genre": "court drama",
 	"year": 1957,
-	"rate": 8.6
+	"rate": 8.6,
+	"poster": "content/images/12.Angry.Men.jpg"
 }, {
 	"title": "Pulp fiction",
 	"genre": "gangster",
 	"year": 1994,
-	"rate": 8.4
+	"rate": 8.4,
+	"poster": "content/images/Pulp.Fiction.jpg"
 }, {
 	"title": "Seven",
 	"genre": "criminal",
 	"year": 1995,
-	"rate": 8.3
+	"rate": 8.3,
+	"poster": "content/images/Seven.jpg"
 }, {
 	"title": "Shutter Island",
 	"genre": "thriller",
 	"year": 2010,
-	"rate": 8.2
+	"rate": 8.2,
+	"poster": "content/images/Shutter.Island.jpg"
 }, {
 	"title": "Saving private Ryan",
 	"genre": "war",
 	"year": 1998,
-	"rate": 8.1
+	"rate": 8.1,
+	"poster": "content/images/Saving.Private.Ryan.jpg"
 }, {
 	"title": "Star Wars: Episode VI - Return of the Jedi",
 	"genre": "adventure",
 	"year": 1983,
-	"rate": 8.1
+	"rate": 8.1,
+	"poster": "content/images/Return.Of.The.Jedi.jpg"
 }, {
 	"title": "Il buono, il brutto, il cattivo",
 	"genre": "western",
 	"year": 1966,
-	"rate": 8.2
+	"rate": 8.2,
+	"poster": "content/images/Good.Bad.Ugly.jpg"
 }, {
 	"title": "The departed",
 	"genre": "criminal",
 	"year": 2006,
-	"rate": 8
+	"rate": 8.0,
+	"poster": "content/images/Departed.jpg"
 }, {
 	"title": "Inglourious Basterds",
 	"genre": "war",
 	"year": 2009,
-	"rate": 8
+	"rate": 8.0,
+	"poster": "content/images/Inglorious.Basterds.jpg"
 }]

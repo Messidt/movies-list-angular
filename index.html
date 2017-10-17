@@ -23,8 +23,18 @@
         </nav>
       </header>
       <main ng-controller="MoviesController">
-        <ul>
-          <li ng-repeat="movie in movies">{{movie}}</li>
+        <ul id="movies-list">
+          <li ng-repeat="movie in movies">
+            <div class="movie-poster">
+              <img ng-src="{{movie.poster}}" alt="">
+            </div>
+            <div class="movie-info">
+              <h3>{{movie.title}} ({{movie.year}})</h3>
+            </div>
+            <div class="movie-rate">
+              <p>Rate: {{movie.rate}}</p>
+            </div>
+          </li>
         </ul>
       </main>
       <footer>

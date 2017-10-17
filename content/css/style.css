@@ -72,6 +72,25 @@ header {
     color: white;
     font-size: 2rem; }
 
+#movies-list {
+  margin: 0 auto;
+  display: block;
+  width: 70%; }
+  #movies-list li {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #movies-list .movie-rate {
+    text-align: center; }
+
 footer {
   background-color: #00adc9;
   font-size: 1.5rem;
