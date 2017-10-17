@@ -10,20 +10,24 @@
     <script src="app/app.js"></script>
   </head>
   <body>
-    <header>
-      <h1>My movies</h1>
-      <nav>
+    <div class="wrapper">
+      <header>
+        <h1>My movies</h1>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Movies list</li>
+          </ul>
+        </nav>
+      </header>
+      <main ng-controller="MoviesController">
         <ul>
-          <li>Home</li>
-          <li>Movies list</li>
+          <li ng-repeat="movie in movies">{{movie}}</li>
         </ul>
-      </nav>
-    </header>
-    <main ng-view>
-
-    </main>
-    <footer>
-      <h3>Created by Piotr Szmidt &copy; 2017</h3>
-    </footer>
+      </main>
+      <footer>
+        <h3>Created by Piotr Szmidt &copy; 2017</h3>
+      </footer>
+    </div>
   </body>
 </html>
