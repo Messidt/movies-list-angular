@@ -18,6 +18,7 @@ moviesModule.config(['$routeProvider', function($routeProvider){
 
 moviesModule.controller('MoviesController', ['$scope', '$http', function($scope, $http){
 
+  $scope.random = Math.floor(Math.random()*10);
 
   $http.get('content/data/movies.json').then(function(response){
     $scope.movies = response.data;

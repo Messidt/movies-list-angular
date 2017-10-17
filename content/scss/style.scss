@@ -8,6 +8,8 @@ body {
   margin: 0 auto;
 }
 
+// HEADER
+
 header {
   display: flex;
   background-color: #00adc9;
@@ -63,6 +65,11 @@ header {
 
 }
 
+// END HEADER
+
+
+// HOMEPAGE
+
 section#homepage {
   width: 80%;
   margin: 0 auto;
@@ -98,7 +105,9 @@ section#homepage {
   }
 }
 
+// END HOMEPAGE
 
+// MOVIES LIST
 
 #movies-list {
   margin: 0 auto;
@@ -129,9 +138,13 @@ section#homepage {
   }
 }
 
+// END MOVIES LIST
+
+// FOOTER
+
 footer {
   background-color: #00adc9;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   padding: 10px;
   text-align: center;
@@ -155,3 +168,5 @@ footer {
     z-index: -1;
   }
 }
+
+// END FOOTER
