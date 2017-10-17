@@ -3,7 +3,8 @@ var moviesModule = angular.module('moviesModule', ['ngRoute']);
 moviesModule.config(['$routeProvider', function($routeProvider){
   $routeProvider
   .when('/home', {
-    templateUrl: 'views/home.html'
+    templateUrl: 'views/home.html',
+    controller: 'MoviesController'
   })
   .when('/list', {
     templateUrl: 'views/list.html',

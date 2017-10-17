@@ -72,6 +72,36 @@ header {
     color: white;
     font-size: 2rem; }
 
+section#homepage {
+  width: 80%;
+  margin: 0 auto; }
+  section#homepage article {
+    margin: 40px; }
+  section#homepage h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center; }
+  section#homepage p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: justify; }
+  section#homepage h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px; }
+  section#homepage .random-movie {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
 #movies-list {
   margin: 0 auto;
   display: block;

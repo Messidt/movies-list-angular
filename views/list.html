@@ -1,13 +1,15 @@
-<ul id="movies-list">
-  <li ng-repeat="movie in movies">
-    <div class="movie-poster">
-      <img ng-src="{{movie.poster}}" alt="">
-    </div>
-    <div class="movie-info">
-      <h3>{{movie.title}} ({{movie.year}})</h3>
-    </div>
-    <div class="movie-rate">
-      <p>Rate: {{movie.rate}}</p>
-    </div>
-  </li>
-</ul>
+<section id='list-of-movies'>
+  <ul id="movies-list">
+    <li ng-repeat="movie in movies">
+      <div class="movie-poster">
+        <img ng-src="{{movie.poster}}" alt="">
+      </div>
+      <div class="movie-info">
+        <h3>{{movie.title}} ({{movie.year}})</h3>
+      </div>
+      <div class="movie-rate">
+        <p>Rate: {{movie.rate}}</p>
+      </div>
+    </li>
+  </ul>
+</section>

@@ -63,12 +63,50 @@ header {
 
 }
 
+section#homepage {
+  width: 80%;
+  margin: 0 auto;
+
+  article {
+    margin: 40px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .random-movie {
+    // make a mixin
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
 #movies-list {
   margin: 0 auto;
   display: block;
   width: 70%;
 
   li {
+    //make a mixin
     border: 1px solid lightgray;
     padding: 10px;
     margin: 10px;

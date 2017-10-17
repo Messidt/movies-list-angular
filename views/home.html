@@ -1,1 +1,27 @@
-<h1>Homepage</h1>
+<section id="homepage">
+  <article>
+    <h1>Hi there!</h1>
+    <p>If you are&nbsp;a movie maniac you're in&nbsp;a right place.
+      I&nbsp;created this simple app&nbsp;as my first project&nbsp;in AngularJS framework learning process,
+      but also&nbsp;to manage films that are&nbsp;my favorite ones. Info about movies,
+      posters,&nbsp;and ratings where taken from sites like <a href="http://www.imdb.com/" target="_blank">imdb.com</a>&nbsp;and <a href="http://www.filmweb.pl/" target="_blank">filmweb.pl</a>.
+      You can add your favourite movies, delete them, group them&nbsp;in&nbsp;a various ways.
+      In&nbsp;the future&nbsp;I'm about&nbsp;to hook&nbsp;up&nbsp;a database&nbsp;to this app&nbsp;so&nbsp;it's more real world application.
+    </p>
+  </article>
+  <article>
+    <h2>Today I picked a movie for You:</h2>
+    <div class="random-movie">
+      <div class="movie-poster">
+        <img ng-src="{{movies[0].poster}}" alt="">
+      </div>
+      <div class="movie-info">
+        <h3>{{movies[0].title}} ({{movies[0].year}})</h3>
+      </div>
+      <div class="movie-rate">
+        <p>Rate: {{movies[0].rate}}</p>
+      </div>
+    </div>
+  </article>
+
+</section>
