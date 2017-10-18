@@ -28,7 +28,18 @@ moviesModule.controller('MoviesController', ['$scope', '$http', function($scope,
       rate: $scope.newmovie.rate,
       poster: $scope.newmovie.poster
     })
+
+    $scope.newmovie.title = '';
+    $scope.newmovie.genre = '';
+    $scope.newmovie.year = '';
+    $scope.newmovie.rate = '';
+    $scope.newmovie.poster = '';
   };
+
+  $scope.deleteMovie = function(movie){
+    var deletedMovie = $scope.movies.indexOf(movie);
+    $scope.movies.splice(deletedMovie, 1);
+  }
 
   $http.get('content/data/movies.json').then(function(response){
     $scope.movies = response.data;
