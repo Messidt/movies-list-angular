@@ -1,6 +1,12 @@
 <section id='list-of-movies'>
+  <input type="text" placeholder="Find movie..." ng-model="search" id="search">
+  <div class="sort-btns">
+    <button ng-click="order = 'title'">Order by title</button>
+    <button ng-click="order = 'year'">Order by year</button>
+    <button ng-click="order = '-rate'">Order by rating</button>
+  </div>
   <ul id="movies-list">
-    <li ng-repeat="movie in movies">
+    <li ng-repeat="movie in movies | orderBy: order | filter: search">
       <div class="movie-poster">
         <img ng-src="{{movie.poster}}" alt="">
       </div>
@@ -12,4 +18,19 @@
       </div>
     </li>
   </ul>
+  <div id="add-movie">
+    <form id="add-form" ng-submit="addMovie()">
+      <label for="title">Enter a movie title:</label>
+      <input type="text" id="title" placeholder="Title..." ng-model="newmovie.title">
+      <label for="genre">What's the movie genre:</label>
+      <input type="text"  id="genre" placeholder="Genre..." ng-model="newmovie.genre">
+      <label for="year">Year the movie was released:</label>
+      <input type="text" id="year" placeholder="Year..." ng-model="newmovie.year">
+      <label for="rate">Movie rate:</label>
+      <input type="text" id="rate" placeholder="Rate..." ng-model="newmovie.rate">
+      <label for="poster">Pick an image for a movie poster:</label>
+      <input type="file" id="poster" ng-model="newmovie.poster">
+      <input type="submit" value="Add movie">
+    </form>
+  </div>
 </section>

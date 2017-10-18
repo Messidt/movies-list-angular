@@ -20,6 +20,16 @@ moviesModule.controller('MoviesController', ['$scope', '$http', function($scope,
 
   $scope.random = Math.floor(Math.random()*10);
 
+  $scope.addMovie = function(){
+    $scope.movies.push({
+      title: $scope.newmovie.title,
+      genre: $scope.newmovie.genre,
+      year: $scope.newmovie.year,
+      rate: $scope.newmovie.rate,
+      poster: $scope.newmovie.poster
+    })
+  };
+
   $http.get('content/data/movies.json').then(function(response){
     $scope.movies = response.data;
   });
