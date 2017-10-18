@@ -1,4 +1,4 @@
-var moviesModule = angular.module('moviesModule', ['ngRoute']);
+var moviesModule = angular.module('moviesModule', ['ngRoute', 'ngAnimate']);
 
 moviesModule.config(['$routeProvider', function($routeProvider){
   $routeProvider

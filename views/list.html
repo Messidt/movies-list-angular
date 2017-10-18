@@ -22,17 +22,26 @@
     </li>
   </ul>
   <div id="add-movie">
+    <h2>Add a movie here!</h2>
     <form id="add-form" ng-submit="addMovie()">
-      <label for="title">Enter a movie title:</label>
-      <input type="text" id="title" placeholder="Title..." ng-model="newmovie.title">
-      <label for="genre">What's the movie genre:</label>
-      <input type="text"  id="genre" placeholder="Genre..." ng-model="newmovie.genre">
-      <label for="year">Year the movie was released:</label>
-      <input type="text" id="year" placeholder="Year..." ng-model="newmovie.year">
-      <label for="rate">Movie rate:</label>
-      <input type="text" id="rate" placeholder="Rate..." ng-model="newmovie.rate">
-      <label for="poster">Pick an image for a movie poster:</label>
+      <input type="text" id="title" ng-model="newmovie.title" required autocomplete="off">
+      <label for="title">Title:</label>
+
+      <input type="text"  id="genre" ng-model="newmovie.genre" required autocomplete="off">
+      <label for="genre">Genre:</label>
+
+      <input type="text" id="year" ng-model="newmovie.year" required autocomplete="off">
+      <label for="year">Year:</label>
+
+      <input type="text" id="rate" ng-model="newmovie.rate"  required autocomplete="off">
+      <label for="rate">Rate:</label>
+
+      <!--
+      Add this functionality later
       <input type="file" id="poster" ng-model="newmovie.poster">
+      <label for="poster">Pick an image for a movie poster:</label>
+
+      -->
       <input type="submit" value="Add movie">
     </form>
   </div>
