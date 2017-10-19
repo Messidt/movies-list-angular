@@ -1,11 +1,10 @@
 // VARIABLES
-
 $lightblue: #00adc9;
 $darkblue: #2c3e50;
 
 // MIXINS
-
 @mixin movie {
+  width: auto;
   font-size: 1.5rem;
   background-color: #23262d;
   border: 1px solid lightgray;
@@ -47,7 +46,7 @@ $darkblue: #2c3e50;
       border-radius: 10px;
     }
   }
-}
+}//END MIXINS
 
 
 
@@ -76,7 +75,6 @@ header {
   height: 100px;
   margin-bottom: 60px;
   overflow: hidden;
-
   #logo {
     flex: 1 1 35%;
     padding: 10px;
@@ -88,7 +86,6 @@ header {
     display: flex;
     align-items: center;
   }
-
   i {
     font-size: 2rem;
     padding: 2px;
@@ -98,25 +95,20 @@ header {
     margin-left: 10px;
 
   }
-
   h1 {
     font-size: 2.5rem;
     flex: 2 2 50%;
   }
-
   nav {
     flex: 2 2 60%;
     padding: 20px;
   }
-
   ul {
     display: flex;
     justify-content: flex-end;
   }
-
   li {
     flex-basis: 25%;
-    //text-align: center;
     padding: 5px;
     display: flex;
     &:hover {
@@ -130,7 +122,6 @@ header {
       flex: 1 1 5%;
       margin-right: -10px;
     }
-
     a {
       flex: 2 2 95%;
       text-decoration: none;
@@ -139,39 +130,36 @@ header {
       padding: 10px;
     }
   }
-}
-// END HEADER
+}// END HEADER
 
 
 // HOMEPAGE
 
 section#homepage {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-
-  article {
-    margin: 40px;
+  #welcome {
+    margin: 110px 50px;
   }
-
+  #random {
+    margin: 100px 30px;
+  }
   h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     text-align: center;
   }
-
   p {
     font-size: 1.5rem;
     line-height: 1.5;
     text-align: justify;
   }
-
   a {
     color: $lightblue;
     &:hover{
       color: darken($lightblue, 5%);
     }
   }
-
   h2 {
     text-align: center;
     font-size: 2rem;
@@ -179,9 +167,10 @@ section#homepage {
   }
   .random-movie {
     @include movie;
+    width: 75%;
+    margin: 0 auto;
   }
-}
-// END HOMEPAGE
+}// END HOMEPAGE
 
 // MOVIES LIST
 
@@ -190,13 +179,11 @@ section#homepage {
   margin: 100px auto 30px auto;
   display: flex;
   justify-content: center;
-
   i {
     flex: 1 1 10%;
     font-size: 1.8rem;
     padding-top: 5px;
   }
-
   #search-field {
     flex: 2 2 90%;
     font-size: 1.2rem;
@@ -204,7 +191,6 @@ section#homepage {
     border-radius: 20px;
   }
 }
-
 .sort-btns {
   width: 65%;
   margin: 0 auto 30px auto;
@@ -228,7 +214,6 @@ section#homepage {
   margin: 0 auto;
   display: block;
   width: 70%;
-
   li {
     @include movie;
   }
@@ -240,7 +225,6 @@ section#homepage {
   border: 1px solid $lightblue;
   padding-bottom: 15px;
   border-radius: 5px;
-
   h2 {
     font-size: 2rem;
     text-align: center;
@@ -248,7 +232,6 @@ section#homepage {
     background-color: $lightblue;
     padding: 15px;
   }
-
   label, input {
     display: block;
     width: 80%;
@@ -294,7 +277,6 @@ section#homepage {
     }
   }
 }
-
 // END MOVIES LIST
 
 // FOOTER
@@ -308,7 +290,6 @@ footer {
   height: 50px;
   position: relative;
   margin-top: 180px;
-
   &:before{
     position: absolute;
     background-color: inherit;
@@ -325,7 +306,6 @@ footer {
     z-index: -1;
   }
 }
-
 // END FOOTER
 
 
@@ -366,28 +346,35 @@ main.ng-enter.ng-enter-active {
 
 @media screen and (max-width: 900px) {
 
+  section#homepage {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    .random-movie {
+      width: 85%;
+      font-size: 1.3rem;
+    }
+  }//END HOMEPAGE
   nav a {
     font-size: 1.3rem;
   }
-
-
   .sort-btns {
     display: block;
-
     button {
       display: block;
       margin: 10px auto;
       min-width: 200px;
     }
   }
-
   #movies-list {
     width: 85%;
     li {
       font-size: 1.3rem;
     }
   }
-
   #add-movie {
     width: 60%;
     h2 {
@@ -400,6 +387,19 @@ main.ng-enter.ng-enter-active {
 
 @media screen and (max-width: 720px) {
 
+  section#homepage {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .random-movie {
+      width: 90%;
+      font-size: 1rem;
+    }
+  }//END HOMEPAGE
+
   #movies-list {
     width: 90%;
     li {
@@ -409,7 +409,6 @@ main.ng-enter.ng-enter-active {
 
   #add-movie {
     width: 75%;
-
     h2 {
       font-size: 1.1rem;
     }

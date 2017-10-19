@@ -106,10 +106,12 @@ header {
       padding: 10px; }
 
 section#homepage {
-  width: 80%;
+  width: 100%;
   margin: 0 auto; }
-  section#homepage article {
-    margin: 40px; }
+  section#homepage #welcome {
+    margin: 110px 50px; }
+  section#homepage #random {
+    margin: 100px 30px; }
   section#homepage h1 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -127,6 +129,7 @@ section#homepage {
     font-size: 2rem;
     margin-bottom: 40px; }
   section#homepage .random-movie {
+    width: auto;
     font-size: 1.5rem;
     background-color: #23262d;
     border: 1px solid lightgray;
@@ -148,7 +151,9 @@ section#homepage {
     color: #bcbcbc;
     -webkit-transition: .3s all;
     -o-transition: .3s all;
-    transition: .3s all; }
+    transition: .3s all;
+    width: 75%;
+    margin: 0 auto; }
     section#homepage .random-movie:hover {
       -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -242,6 +247,7 @@ section#homepage {
   display: block;
   width: 70%; }
   #movies-list li {
+    width: auto;
     font-size: 1.5rem;
     background-color: #23262d;
     border: 1px solid lightgray;
@@ -421,6 +427,13 @@ main.ng-enter.ng-enter-active {
   transform: translateX(-100%); }
 
 @media screen and (max-width: 900px) {
+  section#homepage h1 {
+    font-size: 2.5rem; }
+  section#homepage p {
+    font-size: 1.3rem; }
+  section#homepage .random-movie {
+    width: 85%;
+    font-size: 1.3rem; }
   nav a {
     font-size: 1.3rem; }
   .sort-btns {
@@ -439,6 +452,13 @@ main.ng-enter.ng-enter-active {
       font-size: 1.3rem; } }
 
 @media screen and (max-width: 720px) {
+  section#homepage h1 {
+    font-size: 2rem; }
+  section#homepage p {
+    font-size: 1rem; }
+  section#homepage .random-movie {
+    width: 90%;
+    font-size: 1rem; }
   #movies-list {
     width: 90%; }
     #movies-list li {
